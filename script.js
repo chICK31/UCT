@@ -132,13 +132,6 @@ function getType(gender, octagram, mbtiTypeKey, sortingPreference) {
 
     let primaryFunctionGender = gender === "Male" ? "Feminine Primary Function" : "Masculine Primary Function";
 
-    // Print the first part of the result
-    console.log(`${gender}, ${octagram}, ${mbtiTypeArray[0]} with ${mbtiTypeArray[universalCompatibilityFunction]} is universally compatible with: ${newStart}, ${primaryFunctionGender}`);
-
-
-    // Assuming mbti_lists is an array of MBTI types
-
-
     // Search in mbti_lists for new_start
     let results = {"SD | SF": [], "SD | UF": [], "UD | SF": [], "UD | UF": []};
     if (newStart) {
