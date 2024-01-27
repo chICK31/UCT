@@ -1,15 +1,33 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+body{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 1.4;
+	color: #fff;
+	background-color: #1f2029;
+	overflow-x: hidden;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 4%;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 300px;
+}
+
 
 
 .tabs {
@@ -78,9 +96,7 @@ body {
 @keyframes spin {
     100% { transform: rotate(360deg); }
 }
-/* Add this to your style.css file or within a <style> tag in your HTML */
-/* Add this to your style.css file or within a <style> tag in your HTML */
-/* Add this to your style.css file or within a <style> tag in your HTML */
+
 .form-row {
     display: flex;
     align-items: center;
@@ -95,9 +111,3 @@ body {
 .form-row select {
     flex: 2; /* Adjust flex value to control the width of select elements */
 }
-
-/* Add this CSS to your style.css file */
-/* Add this CSS to your style.css file */
-/* Add this CSS to your style.css file */
-
-
