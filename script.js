@@ -20,10 +20,12 @@ function displayResults(results, gender, octagram, mbtiTypeArray, universalCompa
     const resultsDiv = document.getElementById('results');
     resultsDiv.innerHTML = ''; // Clear previous results
 
-    // Add the specific message at the top of the results
+    // Add the specific message at the top of the results and add a class for styling
     const summaryParagraph = document.createElement('p');
     summaryParagraph.innerText = `${gender}, ${octagram}, ${mbtiTypeArray[0]} with ${mbtiTypeArray[universalCompatibilityFunction]} is universally compatible with: ${newStart}, ${primaryFunctionGender}`;
+    summaryParagraph.className = "summary-text"; // Add this line
     resultsDiv.appendChild(summaryParagraph);
+
 
     // Check if results is not undefined
     if (!results) {
