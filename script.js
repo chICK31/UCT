@@ -26,7 +26,6 @@ function displayResults(results, gender, octagram, mbtiTypeArray, universalCompa
     summaryParagraph.className = "summary-text"; // Add this line
     resultsDiv.appendChild(summaryParagraph);
 
-
     // Check if results is not undefined
     if (!results) {
         resultsDiv.innerHTML += '<p>Error: No results to display.</p>';
@@ -47,10 +46,9 @@ function processForm() {
     const gender = document.getElementById('gender').value;
     const octagram = document.getElementById('octagram').value;
     const mbtiType = document.getElementById('mbtiType').value;
-    const sortingPreference = document.getElementById('sortingPreference').value;
 
     // Call your getType function and destructure its return
-    const { results, gender: genderResult, octagram: octagramResult, mbtiTypeArray, universalCompatibilityFunction, newStart, primaryFunctionGender } = getType(gender, octagram, mbtiType, sortingPreference);
+    const { results, gender: genderResult, octagram: octagramResult, mbtiTypeArray, universalCompatibilityFunction, newStart, primaryFunctionGender } = getType(gender, octagram, mbtiType);
 
     if (!results || Object.keys(results).length === 0) {
         console.error("No results to display");
@@ -87,7 +85,7 @@ function findMbtiType(type, typesObj) {
 }
 
 // Main function to get the type and perform operations
-function getType(gender, octagram, mbtiTypeKey, sortingPreference) {
+function getType(gender, octagram, mbtiTypeKey) {
     const mbtiTypeArray = mbtiTypes[mbtiTypeKey]; // Use a different variable name here
     if (!mbtiTypeArray) {
         console.error("Error: MBTI type not found.");
@@ -136,6 +134,8 @@ function getType(gender, octagram, mbtiTypeKey, sortingPreference) {
 
     // Search in mbti_lists for new_start
     let results = {"SD | SF": [], "SD | UF": [], "UD | SF": [], "UD | UF": []};
+    let quadra_results = {"Alpha Quadra": [], "Gamma Quadra": [], "Beta Quadra": [], "Delta Quadra": []}
+    let temple_results = {"Soul Temple": [], "Heart Temple": [], "Mind Temple": [], "Body Temple": []}
     if (newStart) {
         for (let lst of mbti_lists) {
             for (let i = 0; i < lst.length; i++) {
@@ -171,10 +171,3 @@ function getType(gender, octagram, mbtiTypeKey, sortingPreference) {
         primaryFunctionGender: primaryFunctionGender
     };
 }
-
-    for (let oct in results) {
-        for (let result of results[oct]) {
-            console.log(oct, result[0], "contains", result[1]);
-        }
-        
-    }
