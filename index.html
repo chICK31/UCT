@@ -33,13 +33,13 @@
     <h1>Universal Compatibility Calculator</h1>
     <form id="mbtiForm">
         <label for="gender">Gender:</label>
-        <select id="gender" name="gender">
+        <select id="gender" name="gender" onclick="processForm()">
             <option value="Male">Male</option>
             <option value="Female">Female</option>
         </select><br><br>
         
         <label for="octagram">Octagram:</label>
-        <select id="octagram" name="octagram">
+        <select id="octagram" name="octagram"onclick="processForm()">
             <option value="SD | SF">SD | SF</option>
             <option value="SD | UF">SD | UF</option>
             <option value="UD | SF">UD | SF</option>
@@ -47,7 +47,7 @@
         </select><br><br>
         
         <label for="mbtiType">MBTI Type:</label>
-        <select id="mbtiType" name="mbtiType">
+        <select id="mbtiType" name="mbtiType" onclick="processForm()">
             <option value="ISTJ">ISTJ</option>
             <option value="ISFJ">ISFJ</option>
             <option value="INFJ">INFJ</option>
@@ -68,16 +68,14 @@
             <!-- Add all other MBTI types here -->
         </select><br><br>
 
-        <label for="sortingPreference">Sorting Preference:</label>
+        <label for="sortingPreference"onclick="processForm()">Sorting Preference:</label>
         <select id="sortingPreference" name="sortingPreference">
             <option value="Octagram">Octagram</option>
             <option value="Temple">Temple</option>
             <option value="Quadra">Quadra</option>
         </select><br><br>
         
-        <button type="button" onclick="processForm()">Check Compatibility</button>
     </form>
-
     <div id="results">
         <!-- Results will be displayed here -->
     </div>
