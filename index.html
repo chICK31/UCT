@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="personality_code.png"/>
-    <link rel="stylesheet" href="style_articles.css">
-    <title>Popularity of Jungian Analytical Psychology</title>
+
+    <title>Universal Compatibility Calculator</title>
+</head>
+<body>
     <div class="navbar">
         <a href="index.html">Universal Compatibility Calculator</a>
         
@@ -17,75 +22,70 @@
                     <a href="https://csjoseph.life/category/blog-posts/" target="_blank">Official Articles</a>
             </div>
         </div>
-        <div style="margin-top:30px;">
 
-    <h1 align=center>Popularity of Jungian Analytical Psychology</h1>
-    <p>Audio:</p>
-    <audio controls>
-        <source src="Popularity of Jungian Analytical Psychology(AUDIO).mp4" type="audio/ogg">
-        <source src="Popularity of Jungian Analytical Psychology(AUDIO).mp4" type="audio/mpeg">
-        Your browser does not support the audio tag.
-      </audio>
-    
-    <p><i>(This article is subject to change based on reader feedback)
-    </i></p>
-    
-    <p>This science has merit, but the reason some people might not think so is that the lack of <i>"in-your-face", obvious, or tangible</i> evidence is <i>extremely</i> apparent. People don’t just wake up and think “Yes, type is real, I was born with this knowledge.” Instead,  it’s completely the opposite for most people. </p>
-    
-    <p>Question: But, why is that? If Jungian Analytical Psychology is true, then why don’t most people believe in it?    </p> 
-    
-    <p>Answer: The Te of society is not consuming the Ti of this science. Within the Te of society, they simply don’t believe in this science even though it’s true…</p>
 
-    <p>The best way to conceptualize the problem is that Western society is an ESTJ and this science is an ENTP with Se demon, so the ESTJ’s parent function (Si), or the Si of society, can’t interface with the Se demon that this science comes off as.</p>
+
+    <div style="margin-top:30px;">
+
+    <h1>Universal Compatibility Calculator</h1>
+    <form id="mbtiForm">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" onclick="processForm()">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br><br>
         
-    <h1 align=center>Ways to make this science more accessible:</h1>
-    
-    <ol>
-      <li>Make the science <i>look</i> better for popular consumption. (Better format, better advertising, more Se users saying good things about it, etc)</li>
-    <p></p>
-      <li>If Fi users are the <i>“trendsetters”</i> of society, then we need to get them on the bandwagon to help increase the credibility of this science</li>
-    <p></p>
-      <li>More resources for people to benefit from (post YouTube videos in different ways about different topics and <i>far</i> more often, make new courses, make new things other than the type grid, reduce the price to make everything more accessible to the average person, etc)</li>
-    <p></p>
-     <li>Positive energy that encourages people to watch more of your content (Some encouraging words, to generally help people get out of UF since it’s a temporary mindstate)</li>
-    <p></p>
-    <li>Explain popular phonomeana within the context of type. (this could mean explaining why someone is motivated to do something in popular culture, or how popular <i>world</i> events are related to type. This could increase your credibility, reputation, and merit.)</li>
-    </ol>
-    <p> I'm not saying that this will be easy, but if this is done, then hopefully more people could start seeing the wisdom that <a href="https://www.csjoseph.life" target="_blank">C.S. Joseph</a>
-        is willing to give.
-
-    <form>
-    <h2>Questions or Feedback? Post them here!</h2>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9BMaCeJGeV0EvjrsUkYOTg6jZybhbnki5WYPx0Me9e91Q6Q/viewform?embedded=true" 
-        style="width:100%; height:700px; border:none;"
-        frameborder="0" 
-        marginheight="0" 
-        marginwidth="0">
-    Loading…
-</iframe>
-
-<script src="script.js"></script>
-<script src="Cool_font.js"></script>
-<div class="footer">
-    <a href="https://csjoseph.life/" target="_blank">
-        <img src="CSJ-logo-no-shadow-1.png" class="kings-image" alt="Image 1">
-    </a>
-    <a href="https://www.youtube.com/@CSJoseph" target="_blank">
-        <img src="youtube.png" alt="Image 2">
-    </a>
-    <a href="https://discord.gg/VR4A3TQB" target="_blank">
-        <img src="Disord.png" alt="Image 3">
-    </a>
-    <a href="https://offers.csjoseph.life/journeyman" target="_blank">
-        <img src="Journeyman.png" alt="Image 4">
-    </a>
-    <a href="https://offers.csjoseph.life/acolyte" target="_blank">
-        <img src="Acolyte.png" alt="Image 5">
-    </a>
-    <a href="https://www.udja.app/" target="_blank">
-        <img src="UDJA.png" alt="Image 6">
-    </a>
-</div>
-
-</body>
-</html>
+        <label for="octagram">Octagram:</label>
+        <select id="octagram" name="octagram"onclick="processForm()">
+            <option value="SD | SF">SD | SF</option>
+            <option value="SD | UF">SD | UF</option>
+            <option value="UD | SF">UD | SF</option>
+            <option value="UD | UF">UD | UF</option>
+        </select><br><br>
+        
+        <label for="mbtiType">MBTI Type:</label>
+        <select id="mbtiType" name="mbtiType" onclick="processForm()">
+            <option value="ISTJ">ISTJ</option>
+            <option value="ISFJ">ISFJ</option>
+            <option value="INFJ">INFJ</option>
+            <option value="INTJ">INTJ</option>
+            <option value="ISTP">ISTP</option>
+            <option value="ISFP">ISFP</option>
+            <option value="INFP">INFP</option>
+            <option value="INTP">INTP</option>
+            <option value="ESTP">ESTP</option>
+            <option value="ESFP">ESFP</option>
+            <option value="ENFP">ENFP</option>
+            <option value="ENTP">ENTP</option>
+            <option value="ESTJ">ESTJ</option>
+            <option value="ESFJ">ESFJ</option>
+            <option value="ENFJ">ENFJ</option>
+            <option value="ENTJ">ENTJ</option>
+        </select><br><br>
+    </form>
+    <div id="results">
+    </div>
+    <script src="script.js"></script>
+    <script src="Cool_font.js"></script>
+    <div class="footer">
+        <a href="https://csjoseph.life/" target="_blank">
+            <img src="CSJ-logo-no-shadow-1.png" class="kings-image" alt="Image 1">
+        </a>
+        <a href="https://www.youtube.com/@CSJoseph" target="_blank">
+            <img src="youtube.png" alt="Image 2">
+        </a>
+        <a href="https://discord.gg/VR4A3TQB" target="_blank">
+            <img src="Disord.png" alt="Image 3">
+        </a>
+        <a href="https://offers.csjoseph.life/journeyman" target="_blank">
+            <img src="Journeyman.png" alt="Image 4">
+        </a>
+        <a href="https://offers.csjoseph.life/acolyte" target="_blank">
+            <img src="Acolyte.png" alt="Image 5">
+        </a>
+        <a href="https://www.udja.app/" target="_blank">
+            <img src="UDJA.png" alt="Image 6">
+        </a>
+    </div>
+    </body>
+    </html>
