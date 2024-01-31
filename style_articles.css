@@ -131,18 +131,35 @@ body {
 
 /* Change color on hovering over the link */
 
-p,ol {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;    
-    text-align: left;
-    line-height: 2; /* Adjust this value as needed for the desired spacing */
 
-}
 
-h2 {
+h1,h2 {
     font-size: 32px;
-    text-align:left
+    text-align:center
+    
+
 }
 input[type="text"] {
     width: 300px; /* Adjust the width as needed */
   }
+b{
+    font-size: 25px;
+}
+i, b {
+    white-space: nowrap;
+}
+
+/* Additional specificity to ensure our rule takes precedence */
+p i, p b, ol i, ol b {
+    white-space: nowrap;
+}
+
+/* Centered paragraphs and ordered lists */
+p, ol {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;    
+    text-align: left;
+    line-height: 2;
+    width: 70%;
+    margin: 0 auto; /* Centered with royal elegance */
+}
