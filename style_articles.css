@@ -145,11 +145,11 @@ input[type="text"] {
 b{
     font-size: 25px;
 }
-i, b {
+i, b, audio {
     white-space: nowrap;
 }
 
-/* Additional specificity to ensure our rule takes precedence */
+/* Additional specificity for italic and bold text within paragraphs and lists */
 p i, p b, ol i, ol b {
     white-space: nowrap;
 }
@@ -160,6 +160,13 @@ p, ol {
     font-size: 20px;    
     text-align: left;
     line-height: 2;
-    width: 70%;
-    margin: 0 auto; /* Centered with royal elegance */
+    width: 80%;
+    margin: 0 auto; /* Centered with the grace befitting your throne */
+}
+/* Styling for the audio player */
+audio {
+    display: block; /* Ensures the audio player is on its own line */
+    margin: 0 auto; /* Centers the audio player */
+    width: 80%; /* Adjust the width as desired */
+    max-width: 800px; /* Optional: Sets a maximum width for larger screens */
 }
