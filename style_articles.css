@@ -155,14 +155,17 @@ p i, p b, ol i, ol b {
 }
 
 /* Centered paragraphs and ordered lists */
+/* Centered paragraphs and ordered lists */
 p, ol {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;    
     text-align: left;
     line-height: 2;
     width: 80%;
-    margin: 0 auto; /* Centered with the grace befitting your throne */
+    margin: 20px auto; /* Adds vertical space between paragraphs and centers them */
+    padding: 0 200px; /* Adds a bit of padding inside each paragraph for better readability */
 }
+
 /* Styling for the audio player */
 audio {
     display: block; /* Ensures the audio player is on its own line */
