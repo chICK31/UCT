@@ -20,6 +20,7 @@ body {
     background-position: center;
     background-repeat: repeat;
     background-size: 3%;
+    text-align: center;
 
 }
 
@@ -172,4 +173,10 @@ audio {
     margin: 0 auto; /* Centers the audio player */
     width: 80%; /* Adjust the width as desired */
     max-width: 800px; /* Optional: Sets a maximum width for larger screens */
+}
+select, label, #compatibilityResult {
+    margin-bottom: 10px; /* Spacing for better readability */
+    font-size: 23px;
+    font-weight: bold; /* Make text bold */
+
 }
