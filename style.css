@@ -142,9 +142,9 @@ p {
 }
 
 h1 {
-    font-size: 36px;
-    text-align: center;
-    margin: 20px 0;
+    font-size: 22px;
+    margin: 2% 0;
+    line-height: 1.4;
 }
 
 h2 {
@@ -156,7 +156,7 @@ h2 {
 /* Mobile-specific adjustments */
 @media (max-width: 768px) {
     .header-content {
-        padding-top: 80px; /* Ensure content clears the navbar on smaller screens */
+        padding-top: 10px; /* Ensure content clears the navbar on smaller screens */
         text-align: center; /* Center-align all content within this section */
     }
 
