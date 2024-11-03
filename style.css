@@ -29,55 +29,58 @@ body {
     padding: 0 10px;
 }
 
-.navbar {
+/* Add top padding to avoid overlap with the navbar */
+.header-content {
+    padding-top: 60px; /* Adjust this value to match the height of the navbar */
+}
 
-    background-color: #333; /* A color as regal as your crown */
-    position: fixed; /* Fixed atop your page, overseeing the kingdom */
+.navbar {
+    background-color: #333;
+    position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Ensuring the navbar is always on top */
+    z-index: 1000;
 }
 
 /* Navigation links */
 .navbar a, .dropbtn {
     float: left;
     display: block;
-    color: #f2f2f2; /* A color as bright as your royal scepter */
+    color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    background-color: #333; /* A color as deep as the royal mines */
+    background-color: #333;
 }
 
 .dropdown {
-    position: relative; /* Positioning context for the dropdown content */
+    position: relative;
     float: left;
 }
 
-
 /* Dropdown button */
 .dropbtn {
-    font-size: 16px;    
+    font-size: 16px;
     border: none;
     outline: none;
     color: white;
     padding: 14px 16px;
-    background-color: inherit; /* Inherits from navbar */
-    font-family: inherit; /* Inherits from navbar */
+    background-color: inherit;
+    font-family: inherit;
     margin: 0;
-    cursor: pointer; /* Cursor as pointer for better user experience */
+    cursor: pointer;
 }
 
-/* Dropdown content (hidden by default) */
+/* Dropdown content */
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px; /* Adjust this width as needed */
+    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1001; /* Higher than the navbar to overlap */
+    z-index: 1001;
     left: 0;
-    top: 100%; /* Positions below the dropdown button */
+    top: 100%;
 }
 
 /* Links inside the dropdown */
@@ -89,7 +92,6 @@ body {
     display: block;
     text-align: left;
 }
-
 
 /* Change color on hover */
 .navbar a:hover, .dropdown-content a:hover, .dropbtn:hover {
@@ -139,6 +141,12 @@ p {
     padding: 0 15px;
 }
 
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 20px 0;
+}
+
 h2 {
     font-size: 24px;
     text-align: left;
@@ -147,26 +155,42 @@ h2 {
 
 /* Mobile-specific adjustments */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
+    .header-content {
+        padding-top: 80px; /* Ensure content clears the navbar on smaller screens */
+        text-align: center; /* Center-align all content within this section */
     }
 
-    .navbar a, .dropbtn {
-        padding: 8px;
-        font-size: 16px;
-    }
-
-    .dropdown-content {
-        position: static; /* Makes dropdown items flow below the button on mobile */
-        width: 100%;
+    h1 {
+        font-size: 28px;
+        margin: 15px 0;
+        text-align: center;
     }
 
     h2 {
-        font-size: 22px;
+        font-size: 20px;
+        padding: 0 10px;
+        text-align: center;
     }
 
     p {
-        font-size: 13px;
+        font-size: 14px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    #results, form {
+        width: 90%;
+        padding: 0 10px;
+        margin: 0 auto; /* Centers the form and results */
+        text-align: center; /* Center text content within the form */
+    }
+
+    input[type="text"], select, button {
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 10px;
+        padding: 8px;
+        text-align: center; /* Centers text inside input fields */
     }
 }
+
